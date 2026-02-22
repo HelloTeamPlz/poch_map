@@ -17,7 +17,7 @@ async def p(ctx, system_name):
     if search_word in contents:
         file.close()
         embed = discord.Embed(description=f"Here's the exit map for {system_name}")
-        embed.set_image(url=f'https://pochven.goryn.wtf/img/{system_name}.png')
+        embed.set_image(url=f'https://pochven.goryn.wtf/img/{search_word}.png')
         await ctx.send(embed=embed)
     else:
         file.close()
