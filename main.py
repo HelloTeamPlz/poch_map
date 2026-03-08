@@ -13,7 +13,7 @@ async def p(ctx, *, system_name):
   """
   with open('sys.txt') as file:
     contents = file.read()
-    search_word = system_name.lower()
+    search_word = system_name.lower().replace(" ", "-")
     if search_word in contents:
         file.close()
         embed = discord.Embed(description=f"Here's the exit map for {system_name}")
