@@ -7,7 +7,7 @@ api_key = os.environ.get("discbot")
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 @bot.command()
-async def p(ctx, system_name):
+async def p(ctx, *, system_name):
   """
   sends emebed image with likly wh spawns close to the system if the system is in sys.txt file
   """
